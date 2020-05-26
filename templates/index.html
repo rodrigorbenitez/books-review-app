@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container" id="indexContainer">
+<h2>Welcome, {{session['name']}}! </h2>
+<h4>Here you can find 5000 different books titles from different authors. Choose one, write a review and see how others rate the book. Let's get started!</h4> 
+<h4>Search for:</h4>
+<div  id="search-box">   
+    <form class="form-inline w-75" id="search-form" action="/" method="POST">
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="isbn" required>
+        <label class="form-check-label" for="inlineRadio1">ISBN number</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="title" required>
+        <label class="form-check-label" for="inlineRadio2">Title</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="author" required>
+        <label class="form-check-label" for="inlineRadio3">Author</label>
+      </div>
+      <div id="searchInput">
+            <input class="form-control" type="text" name="bookSearch"  placeholder="Search" aria-label="Search">
+            <button class="btn" type="submit">Search</button></div>
+    </form>
+</div>
+<table class="table w-75" id="generalTable">
+  <thead>
+    <tr>
+      <th scope="col">ISBN</th>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for bookData in bookData %}
+    <tr>
+      <td><a href="{{ url_for('bookIndex', isbn=bookData.isbn) }}">{{ bookData.isbn }}</a></td>
+      <td>{{ bookData.title }}</td>
+      <td>{{ bookData.author }}</td>
+    </tr>
+    {% endfor %}
+    <h4 style="color: #FFC700;">{{message}}</h4>
+  </tbody>
+</table>
+</div>
+{% endblock %}

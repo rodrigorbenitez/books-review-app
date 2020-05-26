@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: 100vh;
+  }
+  #login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 380px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+  }
+  #login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+  }
+  #login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+  }
+  #log-links{color: white;}
+
+  #search-box{
+    display: flex ;
+    flex-direction: row 
+  }
+  #reviewInput{
+    height: 400px;
+    vertical-align: middle
+  }
+  #loginForm, #registerForm{ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-top: 30px;
+    width: 400px;
+    background: rgb(0,23,31);
+    background: radial-gradient(circle, rgba(0,23,31,1) 0%, rgba(0,56,107,1) 100%);
+    border-radius: 10px
+  }
+  #loginHeader, #registerHeader{text-align: center;
+  margin-top: 40px;}
+  #nav{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); 
+  }
+body{background: rgb(0,168,232);
+  background: linear-gradient(0deg, rgba(0,168,232,1) 0%, rgba(0,56,107,1) 100%);
+  background-attachment: fixed;
+
+  color: #FFFFFF;
+}
+nav{background-color: #00386B;}
+.btn{background-color: rgb(0,168,232) !important;
+  
+  color: #FFFFFF;
+}
+#logo{width: 50px;}
+#logo_nav{width: 30px;}
+.header{color: #FFC700;}
+.header a{color: #FFC700;}
+#generalTable{background-color: #00171F;
+color: #00A8E8;
+margin: 0 auto;
+margin-top: 40px;
+}
+#search-form{margin: 0 auto; 
+
+}
+#indexContainer>h2, #indexContainer>h1, #indexContainer>h4 {margin: 10px auto;
+  max-width: 75%;
+}
+#searchInput{margin-top: 10px;}
+#searchInput input{width: 300px;
+}
+#errorMessageIndex{margin: 20px auto;
+  max-width: 75%;
+  color: #FFC700;
+}
+textarea{width: 500px !important;}
+#memberNameReview, #errorSearch{color: #FFC700;
+font-size: 20px;
+}
+#reviewsMessage{color: #FFC700;}
+#generalError{margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFC700;
+}
+#errorSearch{color: #FFC700;}
