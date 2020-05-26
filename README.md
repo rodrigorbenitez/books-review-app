@@ -1,7 +1,7 @@
 # Project 1
 
 <h1>Web Programming with Python and JavaScript</h1>
-<h1> demo here <a href:"https://mantenimientoapp.herokuapp.com/">mantenimientoapp.herokuapp.com<a>
+<h1> demo here https://project1-book-review-rodrigo.herokuapp.com/
 
 Project 1
 This is the second project in the Edx course CS50 Web Programming with Python and Javascript.
