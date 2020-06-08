@@ -127,7 +127,7 @@ def index():
      return render_template("index.html",bookSearch=bookSearch, option=option, bookData=bookData, message=message)
 
 
-#-------------------particular book--------------------#
+#-------------------individual book's page--------------------#
 
 @app.route("/index/<isbn>", methods=["GET","POST"])
 def bookIndex(isbn):
@@ -180,6 +180,7 @@ def logout():
     session['name']=""
     return render_template("error.html", message="you are logged out")
 
+#---------------BOOKS API---------------------#
 
 @app.route("/api/index/<isbn>")
 def book_api(isbn):

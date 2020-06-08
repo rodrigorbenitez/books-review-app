@@ -3,44 +3,54 @@
 <h1>Web Programming with Python and JavaScript</h1>
 <h1> demo here https://project1-book-review-rodrigo.herokuapp.com/
 
-Project 1
-This is the second project in the Edx course CS50 Web Programming with Python and Javascript.
-Overview
-<h3>Registration</h3>
-<ul>
-<li>http://127.0.0.1:5000/register</li>
-<li>register.html, error.html
-</li></ul>
-<h3>Login</h3>
-<ul>
-<li>http://127.0.0.1:5000/login</li>
-<li>login.html, error.html</li></ul>
- 
-<h3>Index</h3>
-<ul>
-<li>http://127.0.0.1:5000/</li>
-<li>Index.html</li></ul>
-<h3>Logout</h3>
-<ul>
-<li>http://127.0.0.1:5000/logout</li>
-<li>logout.html, error.html</li>
- </ul>
-<h3>Books</h3>
-   <ul>
-<li>http://127.0.0.1:5000/index/<isbn></li>
-<li>example</li>
-<li>book.html</li>
-     </ul>
-<h3>API Acces</h3>
-  <ul>
-<li>http://127.0.0.1:5000/api/index/<isbn></li>
-<li>Example: http://127.0.0.1:5000/api/index/1481420763</li>
- </ul>
-<h3>Description
-When you open the page shows the register template if you are not logged in. The navbar is always showed, and if you want to log out, the page shows you the log in template.
-When you log in, redirects automatically to the index page, where you can search the books by ISBN, title or author.  If the user typed in only part of a title, ISBN, or author name, the search page should find matches for those as well.
-There is an error massage if your search does not match. And when the search appears there is a link in each ISBN number that redirects to the ISBN’S page.
-In each particular book page, there is information from the database in Heroku, and some information from the goodreads API.
-On the book page, users can submit a review: consisting of a rating on a scale of 1 to 5, as well as a text component to the review where the user can write their opinion about a book. Users can not submit multiple reviews for the same book.
-PostgreSQL
-In the same directory there is a Python file called import.py separate from your web application, that took the books and imported them into my PostgreSQL database. 
+# Project 1
+
+Course name: Web Programming with Python and JavaScript <br>
+Course no: CS50W <br> 
+Note: I made this project to accomplish project1 portion of HarvardX CS50W course <br>
+
+## Live preview link <a href = 'https://project1-book-review-rodrigo.herokuapp.com/' > https://project1-book-review-rodrigo.herokuapp.com/ </a>
+## Youtube: <a href = 'https://youtu.be/qyX7lfKpFhs'> https://youtu.be/qyX7lfKpFhs </a>
+
+# `App name:` Book's corner'
+
+``Breif description:`` This is a simple book review app made with flask. To use this website features you have to login first. Anyone can register in this website. After registration and logged into the website people can search for books, view reviews on particular book and can submit his own review.
+
+Technology used:
+HTML, CSS, JAVASCRIPT, BOOTSTRAP, PYTHON, FLASK, SQLALCHEMY, POSTGRESQL
+
+Book API used:
+goodreads.com (Thank you for free api)
+
+Server used:
+heroku.com (Thank you for free web service)
+
+## How to use this app:
+
+1. Clone this repositiory  or Download Source files
+2. Run ```pip install -r requirements.txt``` in your terminal/CMD window to make sure that all of the necessary Python packages (Flask and SQLAlchemy, for instance) are installed.
+3. Set an environmental variable to connect with database.
+    <br> Varialbe name must be: ``"DATABASE_URL"``
+    <br> Varialbe value will be: ``"...your database uri ..."``,  example: ``postgres://username:password@hostname/database`` 
+4. Run ```python imports.py``` to create user,books and reveiws table in database and to insert 5000 books data from books.csv
+5. Run ```python app.py``` to run the app
+6. Done
+
+## Features:
+
+**Login:**  Users, once registered, are able to log in to the website with their username and password.
+
+**Registration:** Users are able to register for the website, providing a username and password.
+
+**Logout:** Users can log out from the website by clicking on the logout button.
+
+**Search:**  Once a user has logged in, they are taken to a page where they can search for a book. Users are able to type in the ISBN number of a book, the title of a book, or the author of a book. After performing the search, the website display a list of possible matching results, or a message if there were no matches. If the user typed in only part of a title, ISBN, or author name, the search page find matches for those as well!
+
+**Book page:** By clicking a book title from  the search result users can view information about that book. Statical information will come from goodread.com api and reviews data will come from my website database.
+
+**Api:** https://project1-book-review-rodrigo.herokuapp.com/api/index/ISBN  Replace the ISBN with the real book's isbn number to get a book information in json format . It is not necessary to be logged in to use API endpoint.
+
+
+## Acknowledgments
+
+* HARVARDX Web Programming with Python and JavaScript
