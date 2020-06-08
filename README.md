@@ -16,8 +16,17 @@ Note: I made this project to accomplish project1 portion of HarvardX CS50W cours
 
 ``Breif description:`` This is a simple book review app made with flask. To use this website features you have to login first. Anyone can register in this website. After registration and logged into the website people can search for books, view reviews on particular book and can submit his own review.
 
-Technology used:
-HTML, CSS, JAVASCRIPT, BOOTSTRAP, PYTHON, FLASK, SQLALCHEMY, POSTGRESQL
+## Built With
+
+* [Javascript] (https://www.javascript.com/) - High-level, interpreted programming language
+* [Jquery] (https://jquery.com/) -JavaScript library
+* [Bootstrap] (https://getbootstrap.com/) - Front-end framework
+* [HTML] (https://www.html.com/) - Standard markup language
+* [CSS] (https://css.com) - Style sheet language
+* [Python] (https://www.python.org/) - Interpreted, high-level, general-purpose programming language.
+* [Flask] (https://flask.palletsprojects.com/) - Flask is a micro web framework written in Python.
+* [PostgreSQL] (https://www.postgresql.org/) - PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.
+
 
 Book API used:
 goodreads.com (Thank you for free api)
@@ -25,7 +34,7 @@ goodreads.com (Thank you for free api)
 Server used:
 heroku.com (Thank you for free web service)
 
-## How to use this app:
+### Running:
 
 1. Clone this repositiory  or Download Source files
 2. Run ```pip install -r requirements.txt``` in your terminal/CMD window to make sure that all of the necessary Python packages (Flask and SQLAlchemy, for instance) are installed.
