@@ -1,10 +1,5 @@
 # Project 1
 
-<h1>Web Programming with Python and JavaScript</h1>
-<h1> demo here https://project1-book-review-rodrigo.herokuapp.com/
-
-# Project 1
-
 Course name: Web Programming with Python and JavaScript <br>
 Course no: CS50W <br> 
 Note: I made this project to accomplish project1 portion of HarvardX CS50W course <br>
